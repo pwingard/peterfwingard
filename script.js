@@ -1,12 +1,11 @@
-// Navigation items mapped to bright stars in the Pleiades
-// Using percentages for responsive positioning
+// Navigation items - desktop uses fixed px, mobile recalculates
 const navItemsBase = [
-    { label: 'Peter F. Wingard', url: '#', xPercent: 15, yPercent: 15, isName: true },
-    { label: 'Writing (Alcyone)', url: 'https://books.peterfwingard.com', xPercent: 15, yPercent: 30 },
-    { label: 'Astrophotography (Atlas)', url: 'https://gallery.peterfwingard.com', xPercent: 15, yPercent: 45 },
-    { label: 'Web Apps (Electra)', url: 'https://astro.peterfwingard.com', xPercent: 15, yPercent: 60 },
-    { label: 'Musings (Maia)', url: '#', xPercent: 15, yPercent: 75, placeholder: true },
-    { label: 'Social Media (Merope)', url: 'https://github.com/pwingard', xPercent: 15, yPercent: 90 }
+    { label: 'Peter F. Wingard', labelMobile: 'Peter F. Wingard', url: '#', x: 80, y: 180, isName: true },
+    { label: 'Writing (Alcyone)', labelMobile: 'Writing', url: 'https://books.peterfwingard.com', x: 80, y: 270 },
+    { label: 'Astrophotography (Atlas)', labelMobile: 'Astrophotography', url: 'https://gallery.peterfwingard.com', x: 80, y: 340 },
+    { label: 'Web Apps (Electra)', labelMobile: 'Web Apps', url: 'https://astro.peterfwingard.com', x: 80, y: 410 },
+    { label: 'Musings (Maia)', labelMobile: 'Musings', url: '#', x: 80, y: 480, placeholder: true },
+    { label: 'Social Media (Merope)', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 550 }
 ];
 
 let navItems = [];
@@ -101,20 +100,24 @@ function resizeCanvas() {
     canvas.width = rect.width;
     canvas.height = rect.height;
 
-    // Recalculate positions based on container size
+    const isMobile = window.innerWidth <= 480;
+
+    // Use base positions from navItemsBase
     navItems = navItemsBase.map(item => ({
         ...item,
-        x: (item.xPercent / 100) * rect.width,
-        y: (item.yPercent / 100) * rect.height
+        x: isMobile ? 20 : item.x,
+        y: item.y
     }));
 }
 
 function createNavElements() {
+    const isMobile = window.innerWidth <= 480;
+
     navItems.forEach((item, index) => {
         const link = document.createElement('a');
         link.href = item.url;
         link.className = item.isName ? 'nav-link name' : 'nav-link';
-        link.textContent = item.label;
+        link.textContent = isMobile ? item.labelMobile : item.label;
         link.style.position = 'absolute';
         link.style.left = `${item.x}px`;
         link.style.top = `${item.y}px`;
