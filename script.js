@@ -1,12 +1,12 @@
 // Navigation items mapped to bright stars in the Pleiades
 // Using percentages for responsive positioning
 const navItemsBase = [
-    { label: 'Peter F. Wingard', url: '#', xPercent: 42, yPercent: 25, isName: true },
-    { label: 'Writing (Alcyone)', url: 'https://books.peterfwingard.com', xPercent: 42, yPercent: 38 },
-    { label: 'Astrophotography (Atlas)', url: 'https://gallery.peterfwingard.com', xPercent: 42, yPercent: 48 },
-    { label: 'Web Apps (Electra)', url: 'https://astro.peterfwingard.com', xPercent: 42, yPercent: 58 },
-    { label: 'Musings (Maia)', url: '#', xPercent: 42, yPercent: 68, placeholder: true },
-    { label: 'Social Media (Merope)', url: 'https://github.com/pwingard', xPercent: 42, yPercent: 78 }
+    { label: 'Peter F. Wingard', url: '#', xPercent: 15, yPercent: 15, isName: true },
+    { label: 'Writing (Alcyone)', url: 'https://books.peterfwingard.com', xPercent: 15, yPercent: 30 },
+    { label: 'Astrophotography (Atlas)', url: 'https://gallery.peterfwingard.com', xPercent: 15, yPercent: 45 },
+    { label: 'Web Apps (Electra)', url: 'https://astro.peterfwingard.com', xPercent: 15, yPercent: 60 },
+    { label: 'Musings (Maia)', url: '#', xPercent: 15, yPercent: 75, placeholder: true },
+    { label: 'Social Media (Merope)', url: 'https://github.com/pwingard', xPercent: 15, yPercent: 90 }
 ];
 
 let navItems = [];

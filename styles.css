@@ -113,6 +113,7 @@ body::before {
     background: url('pleiades.jpg') center center / cover no-repeat;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
 }
 
 #shooting-stars-canvas {
@@ -205,17 +206,17 @@ footer {
     }
 
     #main-frame {
-        height: 400px;
+        height: 550px;
         margin: 10px 5px;
     }
 
     .nav-link {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         letter-spacing: 0.02em;
     }
 
     .nav-link.name {
-        font-size: 1.1rem;
+        font-size: 1rem;
         letter-spacing: 0.05em;
     }
 
