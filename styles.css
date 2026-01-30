@@ -177,17 +177,54 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    body {
+        background-size: 250%;
+    }
+
     #main-frame {
-        height: 600px;
-        margin: 30px 10px;
-        padding-left: 40px;
+        height: 500px;
+        margin: 20px 10px;
     }
 
     .nav-link {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .nav-link.name {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: 300%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #main-frame {
+        height: 400px;
+        margin: 10px 5px;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+        letter-spacing: 0.02em;
+    }
+
+    .nav-link.name {
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 20px 10px;
+    }
+
+    .footer-info {
+        font-size: 0.8rem;
     }
 }

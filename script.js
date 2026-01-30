@@ -1,12 +1,15 @@
 // Navigation items mapped to bright stars in the Pleiades
-const navItems = [
-    { label: 'Peter F. Wingard', url: '#', x: 420, y: 180, isName: true },
-    { label: 'Writing (Alcyone)', url: 'https://books.peterfwingard.com', x: 420, y: 270 },
-    { label: 'Astrophotography (Atlas)', url: 'https://gallery.peterfwingard.com', x: 420, y: 340 },
-    { label: 'Web Apps (Electra)', url: 'https://astro.peterfwingard.com', x: 420, y: 410 },
-    { label: 'Musings (Maia)', url: '#', x: 420, y: 480, placeholder: true },
-    { label: 'Social Media (Merope)', url: 'https://github.com/pwingard', x: 420, y: 550 }
+// Using percentages for responsive positioning
+const navItemsBase = [
+    { label: 'Peter F. Wingard', url: '#', xPercent: 42, yPercent: 25, isName: true },
+    { label: 'Writing (Alcyone)', url: 'https://books.peterfwingard.com', xPercent: 42, yPercent: 38 },
+    { label: 'Astrophotography (Atlas)', url: 'https://gallery.peterfwingard.com', xPercent: 42, yPercent: 48 },
+    { label: 'Web Apps (Electra)', url: 'https://astro.peterfwingard.com', xPercent: 42, yPercent: 58 },
+    { label: 'Musings (Maia)', url: '#', xPercent: 42, yPercent: 68, placeholder: true },
+    { label: 'Social Media (Merope)', url: 'https://github.com/pwingard', xPercent: 42, yPercent: 78 }
 ];
+
+let navItems = [];
 
 // Shooting star animation
 class ShootingStar {
@@ -97,6 +100,13 @@ function resizeCanvas() {
     const rect = frame.getBoundingClientRect();
     canvas.width = rect.width;
     canvas.height = rect.height;
+
+    // Recalculate positions based on container size
+    navItems = navItemsBase.map(item => ({
+        ...item,
+        x: (item.xPercent / 100) * rect.width,
+        y: (item.yPercent / 100) * rect.height
+    }));
 }
 
 function createNavElements() {
@@ -157,5 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(startAnimation, 800);
 
     // Handle window resize
-    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('resize', () => {
+        resizeCanvas();
+        // Update existing element positions
+        navItems.forEach(item => {
+            if (item.element) {
+                item.element.style.left = `${item.x}px`;
+                item.element.style.top = `${item.y}px`;
+            }
+        });
+    });
 });
