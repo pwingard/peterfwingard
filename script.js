@@ -120,7 +120,7 @@ function createNavElements() {
 
         // For items with star names, create two lines (on both desktop and mobile)
         if (item.star) {
-            link.innerHTML = `${isMobile ? item.labelMobile : item.label}<br><span class="star-name">${item.star}</span>`;
+            link.innerHTML = `${isMobile ? item.labelMobile : item.label}<br><span class="star-name">(${item.star})</span>`;
         } else {
             link.textContent = isMobile ? item.labelMobile : item.label;
         }

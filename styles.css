@@ -285,13 +285,17 @@ body::before {
     }
 
     .nav-link {
-        font-size: 0.7rem;
+        font-size: 1rem;
         letter-spacing: 0.02em;
     }
 
     .nav-link.name {
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.05em;
+    }
+
+    .star-name {
+        font-size: 0.85rem;
     }
 
     .footer-inside {
