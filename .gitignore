@@ -9,6 +9,9 @@ _site/
 vendor/
 Gemfile.lock
 
+# Claude Code
+.claude/
+
 # OS files
 .DS_Store
 Thumbs.db
