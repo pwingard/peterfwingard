@@ -1,0 +1,26 @@
+---
+layout: page
+title: Astrophotography
+description: Each photograph exists as its own piece of internet canvas art
+permalink: /astrophotos/
+---
+
+<div class="photos-grid">
+    {% if site.data.photos.size > 0 %}
+        {% for photo in site.data.photos %}
+        <a href="{{ photo.url }}" class="photo-card" target="_blank" rel="noopener">
+            <div class="photo-thumbnail">
+                <img src="{{ photo.thumbnail }}" alt="{{ photo.name }}">
+            </div>
+            <h3>{{ photo.name }}</h3>
+            <p class="photo-subdomain">{{ photo.subdomain }}.peterfwingard.com</p>
+            <p class="photo-description">{{ photo.description }}</p>
+        </a>
+        {% endfor %}
+    {% else %}
+        <div class="empty-state">
+            <p>No astrophotos yet. The universe awaits!</p>
+            <p class="hint">To add photos, edit <code>_data/photos.yml</code></p>
+        </div>
+    {% endif %}
+</div>

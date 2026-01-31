@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}See_theShow! | Peter F. Wingard</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}See_theShow! a site by Peter F. Wingard: writer, astrophotographer, web app developer{% endif %}">
+    <meta name="author" content="Peter F. Wingard">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    {{ content }}
+
+    <script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>

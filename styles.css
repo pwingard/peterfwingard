@@ -321,3 +321,232 @@ body::before {
         font-size: 0.7rem;
     }
 }
+
+/* Page Layouts */
+.page-frame {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-block;
+    color: #9bb3e0;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+.page-title {
+    font-family: 'Kalam', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(155, 179, 224, 0.5);
+}
+
+.page-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #9bb3e0;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.page-content {
+    min-height: 50vh;
+}
+
+/* Grid Layouts */
+.musings-grid,
+.photos-grid,
+.webapps-grid,
+.tools-grid,
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Card Styles */
+.musing-card,
+.photo-card,
+.webapp-card,
+.tool-card,
+.book-card {
+    background: rgba(18, 19, 23, 0.8);
+    border: 1px solid rgba(155, 179, 224, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.musing-card:hover,
+.photo-card:hover,
+.webapp-card:hover,
+.tool-card:hover,
+.book-card:hover {
+    border-color: rgba(155, 179, 224, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(155, 179, 224, 0.3);
+}
+
+.musing-card h3,
+.photo-card h3,
+.webapp-card h3,
+.tool-card h3,
+.book-card h3 {
+    font-family: 'Kalam', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Thumbnails */
+.photo-thumbnail,
+.webapp-thumbnail,
+.tool-thumbnail,
+.book-cover {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.photo-thumbnail img,
+.webapp-thumbnail img,
+.tool-thumbnail img,
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Subdomain Display */
+.photo-subdomain,
+.webapp-subdomain {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #7a9bc4;
+    margin-bottom: 0.5rem;
+}
+
+/* Descriptions */
+.musing-description,
+.photo-description,
+.webapp-description,
+.tool-description,
+.book-description {
+    color: #c0c0c0;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Dates and Metadata */
+.musing-date {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+
+.book-status,
+.book-year {
+    font-size: 0.9rem;
+    color: #9bb3e0;
+}
+
+/* Tags */
+.webapp-tags,
+.tool-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(155, 179, 224, 0.2);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: #9bb3e0;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #9bb3e0;
+}
+
+.empty-state p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.empty-state .hint {
+    font-size: 0.9rem;
+    color: #7a9bc4;
+    font-family: 'Courier New', monospace;
+}
+
+.empty-state code {
+    background: rgba(155, 179, 224, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+}
+
+/* Responsive adjustments for pages */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-description {
+        font-size: 1rem;
+    }
+
+    .musings-grid,
+    .photos-grid,
+    .webapps-grid,
+    .tools-grid,
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .page-frame {
+        padding: 2rem 1rem;
+    }
+}

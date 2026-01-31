@@ -1,0 +1,34 @@
+---
+layout: page
+title: Web Tools
+description: Useful utilities and tools
+permalink: /tools/
+---
+
+<div class="tools-grid">
+    {% if site.data.tools.size > 0 %}
+        {% for tool in site.data.tools %}
+        <a href="{{ tool.url }}" class="tool-card">
+            {% if tool.thumbnail %}
+            <div class="tool-thumbnail">
+                <img src="{{ tool.thumbnail }}" alt="{{ tool.name }}">
+            </div>
+            {% endif %}
+            <h3>{{ tool.name }}</h3>
+            <p class="tool-description">{{ tool.description }}</p>
+            {% if tool.tags %}
+            <div class="tool-tags">
+                {% for tag in tool.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </a>
+        {% endfor %}
+    {% else %}
+        <div class="empty-state">
+            <p>No web tools yet. Building something useful!</p>
+            <p class="hint">To add tools, edit <code>_data/tools.yml</code></p>
+        </div>
+    {% endif %}
+</div>

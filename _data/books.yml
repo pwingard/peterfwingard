@@ -1,0 +1,12 @@
+# Books - Can be paths or subdomains
+# Book projects and writings
+#
+# Example entry:
+# - title: "Stargazer's Guide"
+#   url: "/books/stargazers-guide"
+#   description: "A beginner's guide to amateur astronomy"
+#   cover: "/assets/covers/book1.jpg"
+#   status: "In Progress"
+#   year: 2026
+
+# Add your books below:

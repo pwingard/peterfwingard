@@ -1,0 +1,33 @@
+---
+layout: page
+title: Books
+description: Literary works and ongoing projects
+permalink: /books/
+---
+
+<div class="books-grid">
+    {% if site.data.books.size > 0 %}
+        {% for book in site.data.books %}
+        <a href="{{ book.url }}" class="book-card">
+            {% if book.cover %}
+            <div class="book-cover">
+                <img src="{{ book.cover }}" alt="{{ book.title }}">
+            </div>
+            {% endif %}
+            <h3>{{ book.title }}</h3>
+            <p class="book-description">{{ book.description }}</p>
+            {% if book.status %}
+            <p class="book-status"><strong>Status:</strong> {{ book.status }}</p>
+            {% endif %}
+            {% if book.year %}
+            <p class="book-year">{{ book.year }}</p>
+            {% endif %}
+        </a>
+        {% endfor %}
+    {% else %}
+        <div class="empty-state">
+            <p>No books yet. Stories are brewing!</p>
+            <p class="hint">To add books, edit <code>_data/books.yml</code></p>
+        </div>
+    {% endif %}
+</div>

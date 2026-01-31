@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<main class="container">
+    <div id="main-frame" class="page-frame">
+        <a href="/" class="back-link">← Back to Home</a>
+
+        <h1 class="page-title">{{ page.title }}</h1>
+
+        {% if page.description %}
+        <p class="page-description">{{ page.description }}</p>
+        {% endif %}
+
+        <div class="page-content">
+            {{ content }}
+        </div>
+
+        <div class="footer-inside">
+            <a href="mailto:bizpfw@gmail.com" class="contact-link">Contact</a>
+            <span class="footer-divider">•</span>
+            <span class="footer-info">© 2026 See_theShow! Peter F. Wingard</span>
+        </div>
+    </div>
+</main>

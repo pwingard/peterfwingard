@@ -1,0 +1,45 @@
+# Jekyll Configuration for peterfwingard.com
+
+# Site settings
+title: Peter F. Wingard
+description: Portfolio, astrophotography, musings, and creative projects
+url: "https://peterfwingard.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .git
+  - .gitignore
+  - .claude
+
+# Include assets
+include:
+  - _pages
+
+# Collections (if needed later)
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+# GitHub Pages settings
+plugins:
+  - jekyll-relative-links
+
+# Sass/SCSS
+sass:
+  style: compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

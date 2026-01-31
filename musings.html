@@ -1,0 +1,34 @@
+---
+layout: page
+title: Musings
+description: Video reflections on life, space, and everything in between
+permalink: /musings/
+---
+
+<div class="musings-grid">
+    {% if site.data.musings.size > 0 %}
+        {% for musing in site.data.musings %}
+        <div class="musing-card">
+            <div class="video-container">
+                <iframe
+                    src="{{ musing.video_url }}"
+                    title="{{ musing.title }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>{{ musing.title }}</h3>
+            <p class="musing-description">{{ musing.description }}</p>
+            {% if musing.date %}
+            <p class="musing-date">{{ musing.date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="empty-state">
+            <p>No musings yet. Check back soon for video content!</p>
+            <p class="hint">To add videos, edit <code>_data/musings.yml</code></p>
+        </div>
+    {% endif %}
+</div>

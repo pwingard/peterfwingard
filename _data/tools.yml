@@ -1,0 +1,11 @@
+# Web Tools - Can be paths or subdomains
+# Useful tools and utilities
+#
+# Example entry:
+# - name: "Image Processor"
+#   url: "/tools/image-processor"
+#   description: "Process and optimize images"
+#   thumbnail: "/assets/thumbnails/tool-thumb.jpg"
+#   tags: ["images", "utility"]
+
+# Add your tools below:

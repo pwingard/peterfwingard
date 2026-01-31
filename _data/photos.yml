@@ -1,0 +1,18 @@
+# Astrophotography - Photo subdomains
+# Each photo gets its own subdomain
+#
+# Example entry:
+# - name: "M45 The Pleiades"
+#   subdomain: "m45"
+#   url: "https://m45.peterfwingard.com"
+#   description: "The Seven Sisters star cluster"
+#   thumbnail: "/assets/thumbnails/m45-thumb.jpg"
+#   date: 2026-01-31
+
+# Add your photos below:
+- name: "M45 The Pleiades"
+  subdomain: "m45"
+  url: "https://m45.peterfwingard.com"
+  description: "The Seven Sisters star cluster - Internet canvas art"
+  thumbnail: "/pleiades.jpg"
+  date: 2026-01-31

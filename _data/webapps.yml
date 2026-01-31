@@ -1,0 +1,17 @@
+# Web Applications - Subdomain listings
+# Each webapp gets its own subdomain
+#
+# Example entry:
+# - name: "Sky Calculator"
+#   subdomain: "skycalc"
+#   url: "https://skycalc.peterfwingard.com"
+#   description: "Calculate celestial positions and events"
+#   thumbnail: "/assets/thumbnails/skycalc-thumb.jpg"
+#   tags: ["astronomy", "calculator"]
+
+# Add your web apps below:
+- name: "Moondance"
+  subdomain: "moondance"
+  url: "https://moondance.peterfwingard.com"
+  description: "Track the moon's rhythm across the sky - lunar phases, rise/set times, and celestial position tracking"
+  tags: ["astronomy", "moon", "tracking"]
