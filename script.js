@@ -3,7 +3,7 @@ const navItemsBase = [
     { label: 'Peter F. Wingard', labelMobile: 'Peter F. Wingard', url: '#', x: 80, y: 180, isName: true },
     { label: 'Writer', star: 'Alcyone', labelMobile: 'Writer', url: 'https://books.peterfwingard.com', x: 80, y: 270 },
     { label: 'Astrophotographer', star: 'Atlas', labelMobile: 'Astrophotographer', url: 'https://gallery.peterfwingard.com', x: 80, y: 340 },
-    { label: 'Web Apps', star: 'Electra', labelMobile: 'Web Apps', url: 'https://astro.peterfwingard.com', x: 80, y: 410 },
+    { label: 'Astro Tools', star: 'Electra', labelMobile: 'Astro Tools', url: 'https://astro.peterfwingard.com', x: 80, y: 410 },
     { label: 'Musings', star: 'Maia', labelMobile: 'Musings', url: '#', x: 80, y: 480, placeholder: true },
     { label: 'Social Media', star: 'Merope', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 550 }
 ];
@@ -118,9 +118,9 @@ function createNavElements() {
         link.href = item.url;
         link.className = item.isName ? 'nav-link name' : 'nav-link';
 
-        // For items with star names, create two lines
-        if (item.star && !isMobile) {
-            link.innerHTML = `${item.label}<br><span class="star-name">${item.star}</span>`;
+        // For items with star names, create two lines (on both desktop and mobile)
+        if (item.star) {
+            link.innerHTML = `${isMobile ? item.labelMobile : item.label}<br><span class="star-name">${item.star}</span>`;
         } else {
             link.textContent = isMobile ? item.labelMobile : item.label;
         }

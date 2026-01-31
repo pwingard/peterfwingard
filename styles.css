@@ -209,7 +209,7 @@ body::before {
 /* Footer Inside Frame */
 .footer-inside {
     position: absolute;
-    bottom: 15px;
+    bottom: 50px;
     left: 0;
     right: 0;
     text-align: center;
@@ -297,7 +297,7 @@ body::before {
     .footer-inside {
         font-size: 0.7rem;
         gap: 10px;
-        bottom: 10px;
+        bottom: 40px;
     }
 
     .footer-info {
