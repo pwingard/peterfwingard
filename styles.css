@@ -172,18 +172,14 @@ body::before {
     }
 
     .site-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
         top: 15px;
     }
 
     .site-subtitle {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.4),
                      1px 1px 1px rgba(0, 0, 0, 0.3);
-    }
-
-    .nav-link.name {
-        font-size: 1rem;
     }
 }
 
@@ -302,17 +298,17 @@ body::before {
     }
 
     .nav-link {
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: 0.02em;
     }
 
     .nav-link.name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         letter-spacing: 0.05em;
     }
 
     .star-name {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .footer-inside {
