@@ -236,7 +236,7 @@ body::before {
 }
 
 .contact-link {
-    font-family: 'Play', sans-serif;
+    font-family: 'Kalam', cursive;
     color: #e85d4d;
     text-decoration: none;
     font-weight: 400;
@@ -253,11 +253,11 @@ body::before {
 
 .footer-divider {
     color: rgba(255, 255, 255, 0.3);
-    font-family: 'Play', sans-serif;
+    font-family: 'Kalam', cursive;
 }
 
 .footer-info {
-    font-family: 'Play', sans-serif;
+    font-family: 'Kalam', cursive;
     color: #999;
     font-size: 1rem;
     font-weight: 300;
