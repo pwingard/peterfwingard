@@ -124,7 +124,7 @@ body::before {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Play', sans-serif;
     font-size: 3rem;
     font-weight: 400;
     color: #f0e6d2;
