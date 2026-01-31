@@ -3,7 +3,7 @@ const navItemsBase = [
     { label: 'Peter F. Wingard', labelMobile: 'Peter F. Wingard', url: '#', x: 80, y: 120, isName: true },
     { label: 'Author', star: 'Alcyone', labelMobile: 'Author', url: 'https://books.peterfwingard.com', x: 80, y: 200 },
     { label: 'Astrophotographer', star: 'Atlas', labelMobile: 'Astrophotographer', url: 'https://gallery.peterfwingard.com', x: 80, y: 270 },
-    { label: 'Web Apps (Astro)', star: 'Electra & Pleione', labelMobile: 'Web Apps (Astro)', url: 'https://astro.peterfwingard.com', x: 80, y: 340 },
+    { label: 'Astro Web Apps', star: 'Electra & Pleione', labelMobile: 'Astro Web Apps', url: 'https://astro.peterfwingard.com', x: 80, y: 340 },
     { label: 'Musings', star: 'Maia', labelMobile: 'Musings', url: '#', x: 80, y: 410, placeholder: true },
     { label: 'Social Media', star: 'Merope', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 480 }
 ];
