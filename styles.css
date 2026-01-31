@@ -178,6 +178,8 @@ body::before {
 
     .site-subtitle {
         font-size: 0.7rem;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.4),
+                     1px 1px 1px rgba(0, 0, 0, 0.3);
     }
 
     .nav-link.name {

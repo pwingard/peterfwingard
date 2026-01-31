@@ -1,7 +1,7 @@
 // Navigation items - desktop uses fixed px, mobile recalculates
 const navItemsBase = [
     { label: 'Peter F. Wingard', labelMobile: 'Peter F. Wingard', url: '#', x: 80, y: 120, isName: true },
-    { label: 'Writer', star: 'Alcyone', labelMobile: 'Writer', url: 'https://books.peterfwingard.com', x: 80, y: 200 },
+    { label: 'Author', star: 'Alcyone', labelMobile: 'Author', url: 'https://books.peterfwingard.com', x: 80, y: 200 },
     { label: 'Astrophotographer', star: 'Atlas', labelMobile: 'Astrophotographer', url: 'https://gallery.peterfwingard.com', x: 80, y: 270 },
     { label: 'Web Apps (Astro)', star: 'Electra & Pleione', labelMobile: 'Web Apps (Astro)', url: 'https://astro.peterfwingard.com', x: 80, y: 340 },
     { label: 'Musings', star: 'Maia', labelMobile: 'Musings', url: '#', x: 80, y: 410, placeholder: true },
