@@ -116,6 +116,20 @@ body::before {
     overflow: hidden;
 }
 
+.site-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f0e6d2;
+    letter-spacing: 0.15em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+                 0 0 5px rgba(0, 0, 0, 1);
+    z-index: 5;
+}
+
 #shooting-stars-canvas {
     position: absolute;
     top: 0;
@@ -140,6 +154,11 @@ body::before {
     #nav-container {
         padding: 20px 10px;
     }
+
+    .site-title {
+        font-size: 1rem;
+        top: 15px;
+    }
 }
 
 .nav-link {
@@ -152,6 +171,7 @@ body::before {
                  0 0 5px rgba(0, 0, 0, 1);
     transition: color 0.3s ease;
     white-space: nowrap;
+    line-height: 1.4;
 }
 
 .nav-link:hover {
@@ -164,6 +184,13 @@ body::before {
     letter-spacing: 0.1em;
     color: #f0e6d2;
     pointer-events: none;
+}
+
+.star-name {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    letter-spacing: 0.1em;
 }
 
 /* Footer */

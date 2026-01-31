@@ -1,11 +1,11 @@
 // Navigation items - desktop uses fixed px, mobile recalculates
 const navItemsBase = [
     { label: 'Peter F. Wingard', labelMobile: 'Peter F. Wingard', url: '#', x: 80, y: 180, isName: true },
-    { label: 'Writing (Alcyone)', labelMobile: 'Writing', url: 'https://books.peterfwingard.com', x: 80, y: 270 },
-    { label: 'Astrophotography (Atlas)', labelMobile: 'Astrophotography', url: 'https://gallery.peterfwingard.com', x: 80, y: 340 },
-    { label: 'Web Apps (Electra)', labelMobile: 'Web Apps', url: 'https://astro.peterfwingard.com', x: 80, y: 410 },
-    { label: 'Musings (Maia)', labelMobile: 'Musings', url: '#', x: 80, y: 480, placeholder: true },
-    { label: 'Social Media (Merope)', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 550 }
+    { label: 'Writer', star: 'Alcyone', labelMobile: 'Writer', url: 'https://books.peterfwingard.com', x: 80, y: 270 },
+    { label: 'Astrophotographer', star: 'Atlas', labelMobile: 'Astrophotographer', url: 'https://gallery.peterfwingard.com', x: 80, y: 340 },
+    { label: 'Web Apps', star: 'Electra', labelMobile: 'Web Apps', url: 'https://astro.peterfwingard.com', x: 80, y: 410 },
+    { label: 'Musings', star: 'Maia', labelMobile: 'Musings', url: '#', x: 80, y: 480, placeholder: true },
+    { label: 'Social Media', star: 'Merope', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 550 }
 ];
 
 let navItems = [];
@@ -117,7 +117,14 @@ function createNavElements() {
         const link = document.createElement('a');
         link.href = item.url;
         link.className = item.isName ? 'nav-link name' : 'nav-link';
-        link.textContent = isMobile ? item.labelMobile : item.label;
+
+        // For items with star names, create two lines
+        if (item.star && !isMobile) {
+            link.innerHTML = `${item.label}<br><span class="star-name">${item.star}</span>`;
+        } else {
+            link.textContent = isMobile ? item.labelMobile : item.label;
+        }
+
         link.style.position = 'absolute';
         link.style.left = `${item.x}px`;
         link.style.top = `${item.y}px`;
