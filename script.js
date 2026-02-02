@@ -3,10 +3,9 @@ const navItemsBase = [
     { label: 'Peter F. Wingard', labelMobile: 'Peter F. Wingard', url: '/', x: 80, y: 120, isName: true },
     { label: 'Author', star: 'Alcyone', labelMobile: 'Author', url: '/books/', x: 80, y: 200 },
     { label: 'Astrophotographer', star: 'Atlas', labelMobile: 'Astrophotographer', url: '/astrophotos/', x: 80, y: 270 },
-    { label: 'Web Apps', star: 'Electra', labelMobile: 'Web Apps', url: '/webapps/', x: 80, y: 340 },
-    { label: 'Web Tools', star: 'Pleione', labelMobile: 'Web Tools', url: '/tools/', x: 80, y: 410 },
-    { label: 'Musings', star: 'Maia', labelMobile: 'Musings', url: '/musings/', x: 80, y: 480 },
-    { label: 'Social Media', star: 'Merope', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 550 }
+    { label: 'Astro Web Apps', star: 'Electra & Pleione', labelMobile: 'Astro Web Apps', url: '/webapps/', x: 80, y: 340 },
+    { label: 'Musings', star: 'Maia', labelMobile: 'Musings', url: '/musings/', x: 80, y: 410 },
+    { label: 'Social Media', star: 'Merope', labelMobile: 'Social Media', url: 'https://github.com/pwingard', x: 80, y: 480 }
 ];
 
 let navItems = [];
