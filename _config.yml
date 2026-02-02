@@ -1,9 +1,9 @@
-# Jekyll Configuration for peterfwingard.com
+# Jekyll Configuration for pfwingard.com
 
 # Site settings
 title: Peter F. Wingard
 description: Portfolio, astrophotography, musings, and creative projects
-url: "https://peterfwingard.com"
+url: "https://pfwingard.com"
 baseurl: ""
 
 # Build settings

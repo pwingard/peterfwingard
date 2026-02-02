@@ -50,7 +50,7 @@ Edit `_data/photos.yml`:
 ```yaml
 - name: "M45 The Pleiades"
   subdomain: "m45"
-  url: "https://m45.peterfwingard.com"
+  url: "https://m45.pfwingard.com"
   description: "The Seven Sisters star cluster"
   thumbnail: "/assets/thumbnails/m45-thumb.jpg"
   date: 2026-01-31
@@ -65,7 +65,7 @@ Edit `_data/webapps.yml`:
 ```yaml
 - name: "Sky Calculator"
   subdomain: "skycalc"
-  url: "https://skycalc.peterfwingard.com"
+  url: "https://skycalc.pfwingard.com"
   description: "Calculate celestial positions"
   thumbnail: "/assets/thumbnails/skycalc.jpg"
   tags: ["astronomy", "calculator"]
@@ -132,7 +132,7 @@ GitHub Pages will automatically build and deploy your site within a few minutes.
 ## File Structure
 
 ```
-peterfwingard.com/
+pfwingard.com/
 ├── _config.yml           # Jekyll configuration
 ├── _layouts/             # HTML layouts
 │   ├── default.html      # Base layout
