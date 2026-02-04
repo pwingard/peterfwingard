@@ -2,6 +2,52 @@
 
 A Jekyll-powered portfolio website featuring astrophotography, web applications, musings, and more.
 
+---
+
+## 🚀 iOS App Development Plan - Moondance
+
+**Status:** Planning Phase
+**Target:** Convert Moondance web app to paid iOS app
+**Pricing:** $5/year subscription
+**Development Approach:** Native Swift/SwiftUI
+
+### Why iOS App?
+- **Subscription Management:** Apple handles all payments, renewals, refunds via StoreKit
+- **Beta Testing:** TestFlight for up to 10,000 testers
+- **Professional Result:** Native iOS experience
+- **Market Opportunity:** 300-500k astrophotographers worldwide, targeting 3% adoption
+
+### Revenue Projections
+- Target: 15,000 users (3% of 500k astrophotographers)
+- Annual Revenue: $75,000
+- After Apple's cut: $52,500 (Year 1 at 30%), $63,750 (Year 2+ at 15%)
+
+### Development Workflow with Claude Code
+1. **Mac Setup:** Transfer project to Mac, install Claude Code
+2. **Claude Code creates:** All Swift/SwiftUI files directly in project folder
+3. **You open:** Project in Xcode (double-click `.xcodeproj`)
+4. **You build/run:** Click "Build and Run" to test
+5. **Iterate:** Claude Code can read/modify files, fix errors
+
+### Before Starting Development
+- [ ] Check "Moondance" name availability on App Store
+- [ ] Backup name options: "Moondance Pro", "LunarDance", "MoonTracker"
+- [ ] Search USPTO.gov for trademark availability
+- [ ] Set up Apple Developer account ($99/year)
+- [ ] Install Xcode on Mac
+
+### What Moondance Does
+Moon tracking tool for astrophotographers:
+- Lunar phases
+- Rise/set times
+- Celestial position tracking
+
+### Current Web App
+- Live at: https://moondance.pfwingard.com
+- Will be rebuilt as native iOS app
+
+---
+
 ## Setup
 
 ### Prerequisites
